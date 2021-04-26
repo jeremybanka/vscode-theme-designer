@@ -1,6 +1,6 @@
-#### SSAA: Static Shock and Awe
+#### VS Code Theme Designer
 
-_by Jeremy Banka_
+_by Jeremy Banka, Adrian Camacho, Sammai Gutierrez, Rami Ahmed, and Maxwell Meyer_
 
 ## Technologies Used
 
@@ -14,15 +14,20 @@ _by Jeremy Banka_
 
 ## Description
 
-This is a template repo for SHOCKING and AWESOME static web development.
-
-Includes webpack, jest, and eslint preconfigured. Just get to work!
+_..._
 
 ## Setup/Installation Requirements
 
+#### Resources
+
+- [Packaging an extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+- [Example Themes](https://github.com/jeremybanka/vscode_themes)
+- [Token Reference](https://code.visualstudio.com/api/references/theme-color)
+- [How to Inspect VS Code](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector)
+
 #### First Things First
 
-- Clone this repo: `$ git clone https://github.com/jeremybanka/ssaa`
+- Clone this repo: `$ git clone https://github.com/jeremybanka/vscode-theme-designer`
 - Get things installed: `$ npm i`
 - Get things built: `$ npm run start`
 - This should prompt your browser to open the project on 8080. It's actually pointed at the dist folder, and will update live.
@@ -52,4 +57,8 @@ This software is licensed under GPL 3.0.
 
 ## Contact Information
 
+adriancamacho18 at gmail dot com
 hello at jeremybanka dot com
+maxreadswell at gmail dot com
+ramiahmedportland at gmail dot com
+sammaigutierrez at gmail dot com
