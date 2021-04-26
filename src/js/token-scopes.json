@@ -1,5 +1,5 @@
 {
-  "windowBackground": [
+  "scopeA-f2f2f2": [
     "editorGroupHeader.noTabsBackground",
     "input.background",
     "sideBar.background",
@@ -13,5 +13,59 @@
     "tab.border",
     "editorGroupHeader.tabsBackground"
   ],
-  "anotherGroupOfScopes": []
+  "scopeB-777": [
+    "tab.activeForeground",
+    "tab.inactiveForeground",
+    "activityBar.foreground",
+    "statusBar.foreground",
+    "statusBar.noFolderForeground",
+    "sideBarTitle.foreground",
+    "sideBar.foreground",
+    "list.activeSelectionForeground"
+  ],
+  "scopeC-fff": [
+    "editor.background",
+    "tab.activeBackground",
+    "list.activeSelectionBackground",
+    "minimap.background"
+  ],
+  "scopeD-000": [
+    "editorIndentGuide.activeBackground",
+    "activityBarBadge.background",
+    "gitDecoration.conflictingResourceForeground"
+  ],
+  "scopeE-e2e2e2": [
+    "tab.hoverBackground",
+    "list.focusBackground",
+    "list.inactiveSelectionBackground",
+    "list.inactiveFocusBackground",
+    "list.hoverBackground"
+  ],
+  "scopeF-f506": [
+    "list.invalidItemForeground",
+    "list.warningForeground",
+    "list.errorForeground"
+  ],
+  "scopeG-00b4f0": [
+    "progressBar.background",
+    "gitDecoration.addedResourceForeground",
+    "gitDecoration.untrackedResourceForeground"
+  ],
+  "scopeH-ccc": ["editorLineNumber.foreground"],
+  "scopeI-aaa": ["editorIndentGuide.background"],
+  "scopeJ-555(NESTED)": ["editor.foreground"],
+  "scopeK-00b4f011-00000011": [
+    "editor.selectionBackground",
+    "editor.selectionHighlightBackground",
+    "editor.wordHighlightBackground",
+    "editorGroup.dropBackground"
+  ],
+  "scopeL-aaaaaa99-aaaaaa66-aaaaaa77": [
+    "scrollbarSlider.activeBackground",
+    "scrollbarSlider.background",
+    "scrollbarSlider.hoverBackground"
+  ],
+  "scopeM-f056": ["list.errorForeground"],
+  "scopeN-f05(NESTED)": ["editorError.foreground"],
+  "scopeO-ff6496(NESTED)": []
 }
