@@ -1,4 +1,4 @@
-export default {
+export default Theme {
   "window-bg": [ //f2f2f2
     "editorGroupHeader.noTabsBackground",
     "input.background",
