@@ -41,4 +41,25 @@ describe(`Theme.prototype.setColors`, () => {
     }
     expect(theme.colors).toEqual(expected)
   })
+  it(`adds to both colors and tokenColors`, () => {
+    const spec = {
+      "mainerror-fg": `#f05`,
+    }
+    const theme = new Theme()
+    theme.setColors(spec)
+    const expectedColors = {
+      "editorError.foreground": `#f05`,
+    }
+    const expectedTokenColors = [
+      {
+        name: `Invalid`,
+        scope: [`invalid`, `invalid.illegal`, `token.error-token`],
+        settings: {
+          foreground: `#f05`,
+        },
+      },
+    ]
+    expect(theme.colors).toEqual(expectedColors)
+    expect(theme.tokenColors).toEqual(expectedTokenColors)
+  })
 })

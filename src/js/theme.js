@@ -21,6 +21,7 @@ export default class Theme {
             this.colors[displayLocation] = color
             break
           case `object`:
+            displayLocation.settings = {}
             displayLocation.settings.foreground = color
             this.tokenColors.push(displayLocation)
             break
