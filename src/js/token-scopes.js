@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 export default {
   "window-bg": [
     // f2f2f2
@@ -24,6 +26,17 @@ export default {
     `sideBarTitle.foreground`,
     `sideBar.foreground`,
     `list.activeSelectionForeground`,
+    {
+      name: `CSS Class and Support`,
+      scope: [
+        `source.css support.type.property-name`,
+        `source.sass support.type.property-name`,
+        `source.scss support.type.property-name`,
+        `source.less support.type.property-name`,
+        `source.stylus support.type.property-name`,
+        `source.postcss support.type.property-name`,
+      ],
+    },
   ],
   "main-bg": [
     // scopeC-fff
@@ -98,6 +111,10 @@ export default {
   "deleted-fg": [
     // 960032
     `gitDecoration.deletedResourceForeground`,
+    {
+      name: `Deleted`,
+      scope: [`markup.deleted`],
+    },
   ],
   "ignored-fg": [
     // 9896a288
@@ -154,7 +171,7 @@ export default {
     },
     {
       name: `Markdown - Markup Raw Inline`,
-      scope: [`text.html.markdown markup.inline.raw.markdown`]
+      scope: [`text.html.markdown markup.inline.raw.markdown`],
     },
   ],
   // ff8269
@@ -196,9 +213,9 @@ export default {
         `constant.escape`,
         `variable.parameter`,
         `keyword.other.unit`,
-        "keyword.other",,
+        `keyword.other`,
       ],
-    },,
+    },
   ],
   "string-fg": [
     // 555
@@ -228,9 +245,9 @@ export default {
         `meta.use.php`,
         `support.other.namespace.php`,
         `markup.changed.git_gutter`,
-        "support.type.sys-types",,
+        `support.type.sys-types`,
       ],
-    },,
+    },
   ],
   "enitity-fg": [
     // ff8269
@@ -238,20 +255,6 @@ export default {
       name: `Entity Types`,
       scope: [`support.type`],
     },
-  ],
-  // 777
-  "support-fg": [
-    {
-      name: `CSS Class and Support`,
-      scope: [
-        `source.css support.type.property-name`,
-        `source.sass support.type.property-name`,
-        `source.scss support.type.property-name`,
-        `source.less support.type.property-name`,
-        `source.stylus support.type.property-name`,
-        "source.postcss support.type.property-name",,
-      ],
-    },,
   ],
   "sub-methods-fg": [
     // 00a0f0
@@ -278,7 +281,7 @@ export default {
       name: `meta.method.js`,
       scope: [
         `meta.class-method.js entity.name.function.js`,
-        "variable.function.constructor",,
+        `variable.function.constructor`,
       ],
     },
   ],
@@ -295,7 +298,7 @@ export default {
       name: `HTML Attributes`,
       scope: [
         `text.html.basic entity.other.attribute-name.html`,
-        "text.html.basic entity.other.attribute-name",,
+        `text.html.basic entity.other.attribute-name`,
       ],
     },
   ],
@@ -315,13 +318,6 @@ export default {
     {
       name: `CSS ID's`,
       scope: [`source.sass keyword.control`],
-    },
-  ],
-  "deleted-fg": [
-    // 960032
-    {
-      name: `Deleted`,
-      scope: [`markup.deleted`],
     },
   ],
   // 9678f0
@@ -363,14 +359,14 @@ export default {
     // 5000f0
     {
       name: `ES7 Bind Operator`,
-      scope: ["source.js constant.other.object.key.js string.unquoted.label.js"],
+      scope: [`source.js constant.other.object.key.js string.unquoted.label.js`],
     },
   ],
   "es7-bind-operator-fg": [
     // 5000f0
     {
       name: `ES7 Bind Operator`,
-      scope: ["source.js constant.other.object.key.js string.unquoted.label.js"],
+      scope: [`source.js constant.other.object.key.js string.unquoted.label.js`],
     },
   ],
   "json-key-fg": [
@@ -434,11 +430,11 @@ export default {
     // 555
     {
       name: `Markdown - Plain`,
-      scope: ["text.html.markdown", "punctuation.definition.list_item.markdown"],,
+      scope: [`text.html.markdown`, `punctuation.definition.list_item.markdown`],
     },
   ],
   "": [
     // 000
-    {},,
-  ],,
+    {},
+  ],
 }
