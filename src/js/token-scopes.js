@@ -1,5 +1,5 @@
-{
-  "scopeA-f2f2f2": [
+export default {
+  "window-bg": [ //f2f2f2
     "editorGroupHeader.noTabsBackground",
     "input.background",
     "sideBar.background",
@@ -13,7 +13,7 @@
     "tab.border",
     "editorGroupHeader.tabsBackground"
   ],
-  "scopeB-777": [
+  "window-fg": [ //scopeB-777
     "tab.activeForeground",
     "tab.inactiveForeground",
     "activityBar.foreground",
@@ -23,49 +23,73 @@
     "sideBar.foreground",
     "list.activeSelectionForeground"
   ],
-  "scopeC-fff": [
+  "main-bg": [ // scopeC-fff
     "editor.background",
     "tab.activeBackground",
     "list.activeSelectionBackground",
     "minimap.background"
   ],
-  "scopeD-000": [
+  "main-fg": ["editor.foreground"],
+  "badge-bg": [ //scopeD-000
     "editorIndentGuide.activeBackground",
     "activityBarBadge.background",
-    "gitDecoration.conflictingResourceForeground"
   ],
-  "scopeE-e2e2e2": [
+  "hover-bg": [ //scopeE-e2e2e2
     "tab.hoverBackground",
     "list.focusBackground",
     "list.inactiveSelectionBackground",
     "list.inactiveFocusBackground",
     "list.hoverBackground"
   ],
-  "scopeF-f506": [
-    "list.invalidItemForeground",
-    "list.warningForeground",
-    "list.errorForeground"
-  ],
-  "scopeG-00b4f0": [
+  "info-fg": [ // 00b4f0
     "progressBar.background",
     "gitDecoration.addedResourceForeground",
     "gitDecoration.untrackedResourceForeground"
   ],
-  "scopeH-ccc": ["editorLineNumber.foreground"],
-  "scopeI-aaa": ["editorIndentGuide.background"],
-  "scopeJ-555(NESTED)": ["editor.foreground"],
-  "scopeK-00b4f011-00000011": [
+  "linenumber-fg": ["editorLineNumber.foreground"], // ccc
+  "indent-bg": ["editorIndentGuide.background"], // aaa
+  "highlight-bg": [ // 00b4f011
     "editor.selectionBackground",
     "editor.selectionHighlightBackground",
-    "editor.wordHighlightBackground",
+    "editor.wordHighlightBackground"
+  ],
+  "drop-bg": [ // 00000011
     "editorGroup.dropBackground"
   ],
-  "scopeL-aaaaaa99-aaaaaa66-aaaaaa77": [
+  "scrollbar": [ // aaaaaa99-aaaaaa66-aaaaaa77
     "scrollbarSlider.activeBackground",
     "scrollbarSlider.background",
     "scrollbarSlider.hoverBackground"
   ],
-  "scopeM-f056": ["list.errorForeground"],
-  "scopeN-f05(NESTED)": ["editorError.foreground"],
+  "windowwarn-fg": [ //scopeF-f506
+    "list.invalidItemForeground",
+    "list.warningForeground"
+  ],
+  "windowerror-fg": [ //scopeF-f056 ff005566
+    "list.errorForeground"
+  ],
+  "mainerror-fg": [ // f05
+    "editorError.foreground",
+    {
+      "name": "Invalid",
+      "scope": ["invalid", "invalid.illegal", "token.error-token"],
+    },
+  ],
+  "mainwarn-fg": [ // f50
+    "editorWarning.foreground"
+  ],
+  "modified-fg": [ // d2aa5a
+    "gitDecoration.modifiedResourceForeground"
+  ],
+  "deleted-fg": [ // 960032
+    "gitDecoration.deletedResourceForeground"
+  ],
+  "ignored-fg": [ // 9896a288
+    "gitDecoration.ignoredResourceForeground"
+  ],
+  "conflicting-fg": [ // 000
+    "gitDecoration.conflictingResourceForeground"
+  ],
+
   "scopeO-ff6496(NESTED)": []
 }
