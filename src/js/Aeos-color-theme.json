@@ -11,7 +11,7 @@
     "titleBar.inactiveBackground": "#f2f2f2",
     "titleBar.activeBackground": "#f2f2f2",
     "statusBar.background": "#f2f2f2",
-    "statusBar.noFolderBackground":"#f2f2f2",
+    "statusBar.noFolderBackground": "#f2f2f2",
     "activityBar.background": "#f2f2f2",
     "editorGroup.border": "#f2f2f2",
 
@@ -120,11 +120,7 @@
     },
     {
       "name": "Tag",
-      "scope": [
-        "entity.name.tag",
-        "meta.tag.sgml",
-        "markup.deleted.git_gutter"
-      ],
+      "scope": ["entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
       "settings": {
         "foreground": "#000"
       }
