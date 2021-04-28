@@ -1,0 +1,36 @@
+body > main {
+  width: calc(100% - 24px);
+  max-width: 800px;
+  margin: auto;
+  height: calc(50vh - 100px);
+  overflow-y: scroll;
+  font-family: "Theia";
+  border-top: 5px dotted magenta;
+  border-bottom: 5px dotted magenta;
+  padding-left: 10px;
+
+  .form-group {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    * {
+      cursor: pointer;
+    }
+    ~ .form-group {
+      border-top: 1px solid rgba(196, 98, 87, 0.836);
+    }
+    label {
+      flex-grow: 1;
+      &:hover {
+        background: linear-gradient(to right, #dff, #dff0);
+      }
+    }
+    input[type="color"] {
+      width: 21px;
+      appearance: none;
+      padding: none;
+      background-color: white;
+    }
+  }
+}
