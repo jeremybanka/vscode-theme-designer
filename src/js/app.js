@@ -1,5 +1,6 @@
 // STYLE
-import "../styles/core.scss"
+import "../styles/vs-code.scss"
+import "../styles/controls.scss"
 import "../styles/syntax.scss"
 import "../styles/font-face.scss"
 // UI
@@ -37,4 +38,3 @@ $(() => {
   //   console.log(themeSpec)
   // })
 })
-
