@@ -1,0 +1,23 @@
+<article class="html-content">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est reiciendis nesciunt placeat magni dolorem, adipisci inventore iure maiores enim ut ipsa ullam nobis quos libero beatae repellendus consequatur vero.
+</article>
+<article class="css-content">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem, placeat voluptates, iusto quas commodi fugiat consectetur, esse asperiores aspernatur saepe. Voluptatibus eius eligendi, iusto similique optio provident cupiditate placeat.
+</article>
+
+<p>          
+  function some(array, howManyElements) {
+    if (!howManyElements) howManyElements = d(array.length - 1)
+    const picks = []
+    const arrayCopy = [...array]
+    while (howManyElements > 0) {
+      picks.push(arrayCopy.splice(randomIdxOf(arrayCopy), 1))
+      howManyElements -= 1
+    }
+    return picks
+  }
+</p>
+<p>function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5)
+  }
+</p>
