@@ -16,7 +16,7 @@ describe(`new Theme()`, () => {
 describe(`Theme.prototype.setColors`, () => {
   it(`fills the colors object in our theme`, () => {
     const spec = {
-      "Window Background": `#f2f2f2`,
+      "Window Background": `s,
       "Window Text": `#fff`,
     }
     const theme = new Theme()
