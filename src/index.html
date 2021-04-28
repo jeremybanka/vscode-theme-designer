@@ -8,7 +8,7 @@
   <body>
     <header>
       <div id="desktop">
-        <div id="vscode">
+        <div id="vscode" class="window-bg window-text">
           <header>index.html — my-repo</header>
           <main>
             <div id="activity-bar">
@@ -31,12 +31,12 @@
             </div>
             <div id="content-area">
               <section id="tabs">
-                <div class="js" id="active-tab">scripts.js
+                <div class="js editor-bg" id="active-tab">scripts.js
                 </div>
                 <div class="html">index.html</div>
                 <div class="css">styles.css</div>
               </section>
-              <section id="text">
+              <section id="text" class="editor-bg editor-text">
                 <article class="js-content">
                   <div class="c">/* eslint-disable no-restricted-syntax */</div>
                   <div>import <span class="v">d</span> from "../d"</div>
@@ -252,6 +252,8 @@
         <input id="debug" type="color" class="form-control" />
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <button id="export">Export Theme</button>
+    </footer>
   </body>
 </html>

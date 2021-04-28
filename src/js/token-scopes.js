@@ -17,7 +17,7 @@ export default {
     `editorGroupHeader.tabsBackground`,
   ],
   "Window Text": [
-    // scopeB-777
+    // scope B-777
     `tab.activeForeground`,
     `tab.inactiveForeground`,
     `activityBar.foreground`,
