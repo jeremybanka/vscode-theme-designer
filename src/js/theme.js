@@ -17,6 +17,7 @@ export default class Theme {
   }
 
   setColors(spec) {
+    console.log(spec)
     const entries = Object.entries(spec)
     entries.forEach(entry => {
       console.log(entry)

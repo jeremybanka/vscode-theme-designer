@@ -1,28 +1,31 @@
 // STYLE
 import "../styles/core.scss"
 import "../styles/font-face.scss"
-// BIZ
+// UI
 import $ from "jquery"
-
-function getThemeKeyAndValue($formControl) {}
+// BIZ
+import Theme from "./theme"
 
 $(() => {
   const themeSpec = {}
   const $formControls = $(`.form-control`)
-  const arrayColors = getThemeKeyAndValue($formControls)
 
-  console.log($formControls)
+  // console.log($formControls)
 
   $formControls.each(function () {
-    console.log(this)
-    const formControlId = this.attr(`id`)
+    const $formControl = $(this)
+    const formControlId = $formControl.attr(`id`)
     const $label = $(`label[for='${formControlId}']`)
     const key = $label.text()
-    const value = this.val()
+    const value = $formControl.val()
     themeSpec[key] = value
   })
 
   console.log(themeSpec)
+
+  const theme = new Theme(`Cool Name`, `dark`)
+  theme.setColors(themeSpec)
+  console.log(theme)
 
   // arrayColors.forEach(element => {
   //   // element=[k1,v1] => k1, v1
