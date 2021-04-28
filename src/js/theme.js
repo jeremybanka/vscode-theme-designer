@@ -5,7 +5,15 @@ export default class Theme {
     this.name = name
     this.type = type
     this.colors = {}
-    this.tokenColors = []
+    this.tokenColors = [
+      {
+        name: `URL`,
+        scope: [`*url*`, `*link*`, `*uri*`],
+        settings: {
+          fontStyle: `underline`,
+        },
+      },
+    ]
   }
 
   setColors(spec) {
@@ -32,6 +40,7 @@ export default class Theme {
     })
   }
 }
+
 // TURN THIS
 // {
 //   name: `Invalid`,

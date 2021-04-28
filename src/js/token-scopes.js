@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 
 export default {
-  "window-bg": [
+  "Window Background": [
     // f2f2f2
     `editorGroupHeader.noTabsBackground`,
     `input.background`,
@@ -16,7 +16,7 @@ export default {
     `tab.border`,
     `editorGroupHeader.tabsBackground`,
   ],
-  "window-fg": [
+  "Window Text": [
     // scopeB-777
     `tab.activeForeground`,
     `tab.inactiveForeground`,
@@ -38,101 +38,16 @@ export default {
       ],
     },
   ],
-  "main-bg": [
+  "Editor Background": [
     // scopeC-fff
     `editor.background`,
     `tab.activeBackground`,
     `list.activeSelectionBackground`,
     `minimap.background`,
   ],
-  "main-fg": [`editor.foreground`],
-  "badge-bg": [
-    // scopeD-000
-    `editorIndentGuide.activeBackground`,
-    `activityBarBadge.background`,
-  ],
-  "hover-bg": [
-    // scopeE-e2e2e2
-    `tab.hoverBackground`,
-    `list.focusBackground`,
-    `list.inactiveSelectionBackground`,
-    `list.inactiveFocusBackground`,
-    `list.hoverBackground`,
-  ],
-  "info-fg": [
-    // 00b4f0
-    `progressBar.background`,
-    `gitDecoration.addedResourceForeground`,
-    `gitDecoration.untrackedResourceForeground`,
-  ],
-  "linenumber-fg": [`editorLineNumber.foreground`], // ccc
-  "indent-bg": [`editorIndentGuide.background`], // aaa
-  "highlight-bg": [
-    // 00b4f011
-    `editor.selectionBackground`,
-    `editor.selectionHighlightBackground`,
-    `editor.wordHighlightBackground`,
-  ],
-  "drop-bg": [
-    // 00000011
-    `editorGroup.dropBackground`,
-  ],
-  "scrollbar": [
-    // aaaaaa99-aaaaaa66-aaaaaa77
-    `scrollbarSlider.activeBackground`,
-    `scrollbarSlider.background`,
-    `scrollbarSlider.hoverBackground`,
-  ],
-  "windowwarn-fg": [
-    // scopeF-f506
-    `list.invalidItemForeground`,
-    `list.warningForeground`,
-  ],
-  "windowerror-fg": [
-    // scopeF-f056 ff005566
-    `list.errorForeground`,
-  ],
-  "mainerror-fg": [
-    // f05
-    `editorError.foreground`,
-    {
-      name: `Invalid`,
-      scope: [`invalid`, `invalid.illegal`, `token.error-token`],
-    },
-  ],
-  "mainwarn-fg": [
-    // f50
-    `editorWarning.foreground`,
-  ],
-  "modified-fg": [
-    // d2aa5a
-    `gitDecoration.modifiedResourceForeground`,
-  ],
-  "deleted-fg": [
-    // 960032
-    `gitDecoration.deletedResourceForeground`,
-    {
-      name: `Deleted`,
-      scope: [`markup.deleted`],
-    },
-  ],
-  "ignored-fg": [
-    // 9896a288
-    `gitDecoration.ignoredResourceForeground`,
-  ],
-  "conflicting-fg": [
-    // 000
-    `gitDecoration.conflictingResourceForeground`,
-  ],
-  "comment-fg": [
-    // 999
-    {
-      name: `Comment`,
-      scope: [`comment`, `punctuation.definition.comment`],
-    },
-  ],
-  "general-fg": [
+  "Editor Text": [
     // 555
+    `editor.foreground`,
     {
       name: `Variables`,
       scope: [`variable`, `string constant.other.placeholder`],
@@ -162,8 +77,103 @@ export default {
         `keyword.other.substitution`,
       ],
     },
+    {
+      name: `Markdown - Plain`,
+      scope: [`text.html.markdown`, `punctuation.definition.list_item.markdown`],
+    },
   ],
-  "tag-fg": [
+  "Notification Badge": [
+    // 000
+    `editorIndentGuide.activeBackground`,
+    `activityBarBadge.background`,
+  ],
+  "List/Tab Hover Background": [
+    // e2e2e2
+    `tab.hoverBackground`,
+    `list.focusBackground`,
+    `list.inactiveSelectionBackground`,
+    `list.inactiveFocusBackground`,
+    `list.hoverBackground`,
+  ],
+  "Info/New": [
+    // 00b4f0
+    `progressBar.background`,
+    `gitDecoration.addedResourceForeground`,
+    `gitDecoration.untrackedResourceForeground`,
+  ],
+  "Line Number": [
+    // ccc
+    `editorLineNumber.foreground`,
+  ],
+  "Indent Grooves": [
+    // aaa
+    `editorIndentGuide.background`,
+  ],
+  "Highlighted Text Background": [
+    // 00b4f011
+    `editor.selectionBackground`,
+    `editor.selectionHighlightBackground`,
+    `editor.wordHighlightBackground`,
+  ],
+  "Drop Background": [
+    // 00000011
+    `editorGroup.dropBackground`,
+  ],
+  "Scrollbar": [
+    // aaaaaa99-aaaaaa66-aaaaaa77
+    `scrollbarSlider.activeBackground`,
+    `scrollbarSlider.background`,
+    `scrollbarSlider.hoverBackground`,
+  ],
+  "List Warning": [
+    // scopeF-f506
+    `list.invalidItemForeground`,
+    `list.warningForeground`,
+  ],
+  "List Error": [
+    // scopeF-f056 ff005566
+    `list.errorForeground`,
+  ],
+  "Editor Error": [
+    // f05
+    `editorError.foreground`,
+    {
+      name: `Invalid`,
+      scope: [`invalid`, `invalid.illegal`, `token.error-token`],
+    },
+  ],
+  "Editor Warning": [
+    // f50
+    `editorWarning.foreground`,
+  ],
+  "Git: Modified": [
+    // d2aa5a
+    `gitDecoration.modifiedResourceForeground`,
+  ],
+  "Git: Deleted": [
+    // 960032
+    `gitDecoration.deletedResourceForeground`,
+    {
+      name: `Deleted`,
+      scope: [`markup.deleted`],
+    },
+  ],
+  "Git: Ignored": [
+    // 9896a288
+    `gitDecoration.ignoredResourceForeground`,
+  ],
+  "Git: Conflicting": [
+    // 000
+    `gitDecoration.conflictingResourceForeground`,
+  ],
+  "Comment": [
+    // 999
+    {
+      name: `Comment`,
+      scope: [`comment`, `punctuation.definition.comment`],
+    },
+  ],
+  "Tag": [
     // 000
     {
       name: `Tag`,
@@ -174,14 +184,26 @@ export default {
       scope: [`text.html.markdown markup.inline.raw.markdown`],
     },
   ],
-  // ff8269
-  "variable-fg": [
+  "Variable Name": [
+    // ff8269
     {
       name: `Block Level Variables`,
       scope: [`meta.block variable.other`],
     },
+    {
+      name: `Entity Types`,
+      scope: [`support.type`],
+    },
+    {
+      name: `Attributes`,
+      scope: [`entity.other.attribute-name`],
+    },
+    {
+      name: `CSS Classes`,
+      scope: [`entity.other.attribute-name.class`],
+    },
   ],
-  "function-fg": [
+  "Function Name": [
     // ff6496
     {
       name: `Function, Special Method`,
@@ -194,7 +216,7 @@ export default {
       ],
     },
   ],
-  "other-variable-fg": [
+  "Other Variable": [
     // 956
     {
       name: `Other Variable, String Link`,
@@ -202,7 +224,7 @@ export default {
     },
   ],
   // 00a0f0
-  "declaration-fg": [
+  "Number": [
     {
       name: `Number, Constant, Function Argument, Tag Attribute, Embedded`,
       scope: [
@@ -216,48 +238,6 @@ export default {
         `keyword.other`,
       ],
     },
-  ],
-  "string-fg": [
-    // 555
-    {
-      name: `String, Symbols, Inherited Class, Markup Heading`,
-      scope: [
-        `string`,
-        `constant.other.symbol`,
-        `constant.other.key`,
-        `entity.other.inherited-class`,
-        `markup.heading`,
-        `markup.inserted.git_gutter`,
-        `meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js`,
-      ],
-    },
-  ],
-
-  // ff6496
-  "support-fg": [
-    {
-      name: `Class, Support`,
-      scope: [
-        `entity.name`,
-        `support.type`,
-        `support.class`,
-        `support.orther.namespace.use.php`,
-        `meta.use.php`,
-        `support.other.namespace.php`,
-        `markup.changed.git_gutter`,
-        `support.type.sys-types`,
-      ],
-    },
-  ],
-  "enitity-fg": [
-    // ff8269
-    {
-      name: `Entity Types`,
-      scope: [`support.type`],
-    },
-  ],
-  "sub-methods-fg": [
-    // 00a0f0
     {
       name: `Sub-methods`,
       scope: [
@@ -275,8 +255,40 @@ export default {
       scope: [`entity.name.method.js`],
     },
   ],
-  // 00d2af
-  "method-fg": [
+  "String": [
+    // 555
+    {
+      name: `String, Symbols, Inherited Class, Markup Heading`,
+      scope: [
+        `string`,
+        `constant.other.symbol`,
+        `constant.other.key`,
+        `entity.other.inherited-class`,
+        `markup.heading`,
+        `markup.inserted.git_gutter`,
+        `meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js`,
+      ],
+    },
+  ],
+
+  // ff6496
+  "Support": [
+    {
+      name: `Class, Support`,
+      scope: [
+        `entity.name`,
+        `support.type`,
+        `support.class`,
+        `support.orther.namespace.use.php`,
+        `meta.use.php`,
+        `support.other.namespace.php`,
+        `markup.changed.git_gutter`,
+        `support.type.sys-types`,
+      ],
+    },
+  ],
+  "Meta": [
+    // 00d2af
     {
       name: `meta.method.js`,
       scope: [
@@ -285,16 +297,9 @@ export default {
       ],
     },
   ],
-  "attributes-fg": [
-    // ff8269
+  "HTML Attributes": [
     {
-      name: `Attributes`,
-      scope: [`entity.other.attribute-name`],
-    },
-  ],
-  // ffb92d
-  "html-fg": [
-    {
+      // ffb92d
       name: `HTML Attributes`,
       scope: [
         `text.html.basic entity.other.attribute-name.html`,
@@ -302,14 +307,7 @@ export default {
       ],
     },
   ],
-  "css-classes-fg": [
-    // ff8269
-    {
-      name: `CSS Classes`,
-      scope: [`entity.other.attribute-name.class`],
-    },
-  ],
-  "inserted-fg": [
+  "Inserted": [
     // 28a08c
     {
       name: `Inserted`,
@@ -321,7 +319,7 @@ export default {
     },
   ],
   // 9678f0
-  "changed-expression-fg": [
+  "Changed": [
     {
       name: `Changed`,
       scope: [`markup.changed`],
@@ -331,21 +329,14 @@ export default {
       scope: [`string.regexp`],
     },
   ],
-  "escape-characters-fg": [
+  "Escape Characters": [
     // 6450c8
     {
       name: `Escape Characters`,
       scope: [`constant.character.escape`],
     },
   ],
-  "url-fs": [
-    // underline
-    {
-      name: `URL`,
-      scope: [`*url*`, `*link*`, `*uri*`],
-    },
-  ],
-  "decorators-fg": [
+  "Decorators": [
     // b6b4c0
     {
       name: `Decorators`,
@@ -355,21 +346,7 @@ export default {
       ],
     },
   ],
-  "bind-operator-fg": [
-    // 5000f0
-    {
-      name: `ES7 Bind Operator`,
-      scope: [`source.js constant.other.object.key.js string.unquoted.label.js`],
-    },
-  ],
-  "es7-bind-operator-fg": [
-    // 5000f0
-    {
-      name: `ES7 Bind Operator`,
-      scope: [`source.js constant.other.object.key.js string.unquoted.label.js`],
-    },
-  ],
-  "json-key-fg": [
+  "JSON Key": [
     // 00a0f0
     {
       name: `JSON Key - Level 0`,
@@ -426,15 +403,108 @@ export default {
       ],
     },
   ],
-  "markdown-fg": [
-    // 555
+  "Markdown Heading": [
+    // 5000f0
     {
-      name: `Markdown - Plain`,
-      scope: [`text.html.markdown`, `punctuation.definition.list_item.markdown`],
+      name: `Markdown - Heading`,
+      scope: [
+        `entity.name.section.markdown`,
+        `markdown.heading`,
+        `markup.heading | markup.heading entity.name`,
+        `markup.heading.markdown punctuation.definition.heading.markdown`,
+      ],
+    },
+    {
+      name: `ES7 Bind Operator`,
+      scope: [`source.js constant.other.object.key.js string.unquoted.label.js`],
+    },
+    {
+      name: `ES7 Bind Operator`,
+      scope: [`source.js constant.other.object.key.js string.unquoted.label.js`],
     },
   ],
-  "": [
-    // 000
-    {},
+  "Markup Italic": [
+    // ff8269
+    { name: `Markup - Italic`, scope: [`markup.italic`] },
+  ],
+  "Markup Bold": [
+    // 5000f0
+    { name: `Markup - Bold`, scope: [`markup.bold`, `markup.bold string`] },
+    { name: `Markup - Table`, scope: [`markup.table`] },
+    {
+      name: `Markdown - Fenced Bode Block Variable`,
+      scope: [
+        `markup.raw.block.fenced.markdown`,
+        `variable.language.fenced.markdown`,
+        `punctuation.section.class.end`,
+      ],
+    },
+  ],
+  "Markup Underline": [
+    // 00a0f0
+    { name: `Markup - Bold`, scope: [`markup.bold`, `markup.bold string`] },
+    { name: `Markdown - Link`, scope: [`string.other.link.title.markdown`] },
+  ],
+  "Markdown Other": [
+    // 9896a2
+    {
+      name: `Markdown - Blockquote`,
+      scope: [`markup.quote punctuation.definition.blockquote.markdown`],
+    },
+    {
+      name: `Markdown - Link Description`,
+      scope: [`string.other.link.description.title.markdown`],
+    },
+    {
+      name: `Markdown - Fenced Language`,
+      scope: [`variable.language.fenced.markdown`],
+    },
+    {
+      name: `Markdown - Separator`,
+      scope: [`meta.separator`],
+    },
+  ],
+  "Markup In Markdown": [
+    // 555
+    {
+      name: `Markdown - Markup Raw Inline Punctuation`,
+      scope: [
+        `text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown`,
+      ],
+    },
+  ],
+  "Markdown Link Anchor": [
+    // 555
+    {
+      name: `Markdown - Link Anchor`,
+      scope: [`constant.other.reference.link.markdown`],
+    },
+  ],
+  "Markup In Markdown Punctuation": [
+    // 555
+    {
+      name: `Markdown - Markup Raw Inline Punctuation`,
+      scope: [
+        `text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown`,
+      ],
+    },
+  ],
+  "Info": [
+    // #6450c8
+    {
+      scope: `token.info-token`,
+    },
+  ],
+  "Warn": [
+    // #ff8269
+    {
+      scope: `token.warn-token`,
+    },
+  ],
+  "Debug": [
+    // #5a3cf0
+    {
+      scope: `token.debug-token`,
+    },
   ],
 }
