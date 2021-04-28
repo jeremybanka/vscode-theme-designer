@@ -4,7 +4,7 @@
 
 body {
   font-family: Manufab;
-  font-variation-settings: 'wght' 324;
+  font-variation-settings: "wght" 324;
   margin: 0;
   height: 100vh;
   width: 100vw;
@@ -22,6 +22,7 @@ body {
       align-items: center;
       height: 50vh;
       #vscode {
+        color: #777;
         display: flex;
         flex-direction: column;
         height: calc(100% - 2rem);
@@ -38,6 +39,7 @@ body {
         header,
         footer {
           height: 1rem;
+          font-size: 0.6rem;
         }
         header {
           text-align: center;
@@ -46,13 +48,47 @@ body {
           height: 100%;
           display: flex;
           #activity-bar {
+            font-variation-settings: "wght" 75;
+            color: #999;
+            font-family: Icon;
             height: 100%;
             width: 50px;
             text-align: center;
           }
           #side-bar {
+            font-size: 0.75rem;
             height: 100%;
             width: 200px;
+            label,
+            h1 {
+              font-size: 0.6rem;
+              text-transform: uppercase;
+            }
+            label {
+              display: block;
+              background: #ccc;
+              font-variation-settings: "wght" 600;
+              padding-top: 4px;
+              padding-bottom: 2px;
+              padding-left: 4px;
+              &::before {
+                font-variation-settings: "wght" 300;
+                text-transform: lowercase;
+                font-family: Icon;
+                margin-right: 5px;
+                content: "v";
+              }
+            }
+            ul {
+              padding: 0;
+              list-style-type: none;
+              &,
+              li {
+                margin: 0;
+                padding: 5px;
+                padding-left: 10px;
+              }
+            }
           }
           #content-area {
             height: 100%;
@@ -72,7 +108,7 @@ body {
               }
             }
             #text {
-              font-family: Theia; 
+              font-family: Theia;
               color: #555;
               height: 100%;
               background: #fff;
@@ -96,9 +132,28 @@ body {
             }
           }
         }
+        footer {
+          display: flex;
+          > * {
+            padding: 0 10px;
+          }
+          .spacer {
+            flex-grow: 1;
+          }
+          .extension::before {
+            font-variation-settings: "wght" 150;
+            font-family: Icon;
+            margin-right: 3px;
+            content: "c";
+          }
+        }
       }
     }
   }
+}
+#tabs > *:hover,
+li:hover {
+  background: #e2e2e2;
 }
 
 @media (max-width: 840px) {
