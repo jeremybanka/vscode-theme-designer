@@ -4,6 +4,7 @@
 import "../styles/vs-code.scss"
 import "../styles/controls.scss"
 import "../styles/syntax.scss"
+import "../styles/export.scss"
 import "../styles/font-face.scss"
 // UI
 import $ from "jquery"
@@ -12,7 +13,16 @@ import startingSpec from "./starting-spec"
 import Theme from "./theme"
 
 $(() => {
-  const themeSpec = startingSpec
+  let themeSpec = startingSpec
+  const foundSave = window.localStorage.getItem(`theme-spec`)
+  if (foundSave) {
+    themeSpec = JSON.parse(foundSave)
+  } else {
+    window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
+  }
+
+  const theme = new Theme(`Cool Name`, `dark`)
+
   const $formControls = $(`.form-control`)
 
   $formControls.each(function () {
@@ -26,10 +36,6 @@ $(() => {
 
   // console.log(themeSpec)
 
-  const theme = new Theme(`Cool Name`, `dark`)
-  theme.setColors(themeSpec)
-  console.log(theme)
-
   $(`.form-control`).on(`change`, event => {
     console.log(`form control changed`)
     console.log(event.target.value)
@@ -42,5 +48,19 @@ $(() => {
     } else {
       $(`.${event.target.id}`).css(`color`, event.target.value)
     }
+    window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
+  })
+  $(`button#export`).on(`click`, event => {
+    theme.setColors(themeSpec)
+    window.localStorage.setItem(`theme`, JSON.stringify(theme))
+    const url = `./export.html`
+    window.open(url, `_blank`)
   })
 })
+
+if ($(`body#export`)) {
+  const savedTheme = window.localStorage.getItem(`theme`)
+  if (savedTheme) {
+    $(`#theme`).append(savedTheme)
+  }
+}
