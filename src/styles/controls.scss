@@ -44,6 +44,22 @@ body {
     margin: auto;
     align-items: center;
     justify-content: flex-end;
+    .spacer {
+      flex-grow: 1;
+    }
+    input[type="text"] {
+      padding: 0;
+      padding-left: 10px;
+      appearance: none;
+      outline: none;
+      height: 2rem;
+      border-radius: 1rem;
+      border: #ddd solid 2px;
+      font-size: 16px;
+      font-family: Manufab;
+      flex-shrink: 1;
+      width: 35%;
+    }
     #export {
       background: magenta;
       color: white;
@@ -53,7 +69,6 @@ body {
       padding: 0 1rem;
       line-height: 0.7;
       height: 2rem;
-      border-radius: 1;
       appearance: none;
       border: none;
       border-radius: 1rem;
