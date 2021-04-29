@@ -17,13 +17,10 @@ export default class Theme {
   }
 
   setColors(spec) {
-    console.log(spec)
     const entries = Object.entries(spec)
     entries.forEach(entry => {
-      // console.log(entry)
       const [target, color] = entry
       const displayLocations = tokenScopes[target]
-      // console.log(displayLocations)
       if (target === `Scrollbar`) {
         const colorNoOpacity = color.slice(0, 7)
         this.colors[`scrollbarSlider.background`] = `${colorNoOpacity}66`
