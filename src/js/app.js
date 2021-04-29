@@ -33,7 +33,7 @@ $(() => {
   }
 
   const theme = new Theme(`Cool Name`, `dark`)
-  const package = new Package()
+  const userPackage = new Package()
 
   const $formControls = $(`.form-control`)
 
@@ -46,15 +46,18 @@ $(() => {
     $formControl.val(value)
   })
 
-  // console.log(themeSpec)
+  $(`.userInfo`).on(`change`, event => {
+    event.preventDefault()
+    const userName = $(`#userName`).val()
+    const themeName = $(`#themeName`).val()
+    userPackage.setUserName(userName)
+    userPackage.setThemeName(themeName)
+  })
 
   $(`.form-control`).on(`change`, event => {
-    console.log(`form control changed`)
-    console.log(event.target.value)
     const $label = $(`label[for='${event.target.id}']`)
     const key = $label.text()
     themeSpec[key] = event.target.value
-    console.log(key, themeSpec[key])
     if (event.target.id.slice(-2) === `bg`) {
       $(`.${event.target.id}`).css(`background`, event.target.value)
     } else {
@@ -63,9 +66,6 @@ $(() => {
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   })
   $(`button#export`).on(`click`, event => {
-    const userName = $(`#userName`).val()
-    const themeName = $(`#themeName`).val()
-
     theme.setColors(themeSpec)
     window.localStorage.setItem(`theme`, JSON.stringify(theme))
     const url = `./export.html`
