@@ -1,0 +1,22 @@
+{
+  "name": "aeos",
+  "displayName": "Aeos",
+  "description": "Light grey and white minimal sleek background, with emphasis on blue, orange, and pink in foreground.",
+  "version": "0.0.23",
+  "publisher": "jeremybanka",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Aeos",
+        "uiTheme": "vs",
+        "path": "./themes/aeos-color-theme.json"
+      }
+    ]
+  }
+}
