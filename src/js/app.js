@@ -41,12 +41,13 @@ $(() => {
   } else {
     window.localStorage.setItem(`package-spec`, JSON.stringify(packageSpec))
   }
-
   const theme = new Theme(`Cool Name`, `dark`)
   const userPackage = new Package()
+  console.log(packageSpec)
+  $(`#user-name`).val(packageSpec.userName)
+  $(`#theme-name`).val(packageSpec.themeName)
 
   const $colorInputs = $(`input[type=color]`)
-
   $colorInputs.each(function () {
     const $colorInput = $(this)
     const colorInputId = $colorInput.attr(`id`)
@@ -58,12 +59,13 @@ $(() => {
     $paintVsCode(target, value)
   })
 
-  $(`.userInfo`).on(`change`, event => {
-    const userName = $(`#userName`).val()
-    const themeName = $(`#themeName`).val()
+  $(`.userInfo`).on(`change`, () => {
+    const userName = $(`#user-name`).val()
+    const themeName = $(`#theme-name`).val()
     packageSpec.userName = userName
     packageSpec.themeName = themeName
-    console.log(userPackage)
+    window.localStorage.setItem(`package-spec`, JSON.stringify(packageSpec))
+    console.log(packageSpec)
   })
   $(`input[type=color]`).on(`change`, event => {
     const colorInput = event.target
@@ -76,7 +78,7 @@ $(() => {
     console.log(key, themeSpec[key])
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   })
-  $(`button#export`).on(`click`, event => {
+  $(`button#export`).on(`click`, () => {
     userPackage.setUserName(packageSpec.userName)
     userPackage.setThemeName(packageSpec.themeName)
     console.log(userPackage)
