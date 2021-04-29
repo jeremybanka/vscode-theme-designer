@@ -29,7 +29,7 @@ $(() => {
   if (foundPackageSave) {
     packageSpec = JSON.parse(foundPackageSave)
   } else {
-    window.localStorage.setItem(`theme-spec`, JSON.stringify(packageSpec))
+    window.localStorage.setItem(`package-spec`, JSON.stringify(packageSpec))
   }
 
   const theme = new Theme(`Cool Name`, `dark`)
@@ -47,11 +47,11 @@ $(() => {
   })
 
   $(`.userInfo`).on(`change`, event => {
-    event.preventDefault()
     const userName = $(`#userName`).val()
     const themeName = $(`#themeName`).val()
-    userPackage.setUserName(userName)
-    userPackage.setThemeName(themeName)
+    packageSpec.userName = userName
+    packageSpec.themeName = themeName
+    console.log(userPackage)
   })
 
   $(`.form-control`).on(`change`, event => {
@@ -66,6 +66,10 @@ $(() => {
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   })
   $(`button#export`).on(`click`, event => {
+    userPackage.setUserName(packageSpec.userName)
+    userPackage.setThemeName(packageSpec.themeName)
+    console.log(userPackage)
+    window.localStorage.setItem(`package`, JSON.stringify(userPackage))
     theme.setColors(themeSpec)
     window.localStorage.setItem(`theme`, JSON.stringify(theme))
     const url = `./export.html`
@@ -74,6 +78,10 @@ $(() => {
 })
 
 if ($(`body#export`)) {
+  const savedPackage = window.localStorage.getItem(`package`)
+  if (savedPackage) {
+    $(`#package`).append(savedPackage)
+  }
   const savedTheme = window.localStorage.getItem(`theme`)
   if (savedTheme) {
     $(`#theme`).append(savedTheme)
