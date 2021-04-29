@@ -11,17 +11,29 @@ import $ from "jquery"
 // BIZ
 import startingSpec from "./starting-spec"
 import Theme from "./theme"
+import Package from "./package"
 
 $(() => {
   let themeSpec = startingSpec
-  const foundSave = window.localStorage.getItem(`theme-spec`)
-  if (foundSave) {
-    themeSpec = JSON.parse(foundSave)
+  let packageSpec = {
+    userName: ``,
+    themeName: ``,
+  }
+  const foundThemeSave = window.localStorage.getItem(`theme-spec`)
+  if (foundThemeSave) {
+    themeSpec = JSON.parse(foundThemeSave)
   } else {
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   }
+  const foundPackageSave = window.localStorage.getItem(`package-spec`)
+  if (foundPackageSave) {
+    packageSpec = JSON.parse(foundPackageSave)
+  } else {
+    window.localStorage.setItem(`theme-spec`, JSON.stringify(packageSpec))
+  }
 
   const theme = new Theme(`Cool Name`, `dark`)
+  const package = new Package()
 
   const $formControls = $(`.form-control`)
 
@@ -51,6 +63,9 @@ $(() => {
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   })
   $(`button#export`).on(`click`, event => {
+    const userName = $(`#userName`).val()
+    const themeName = $(`#themeName`).val()
+
     theme.setColors(themeSpec)
     window.localStorage.setItem(`theme`, JSON.stringify(theme))
     const url = `./export.html`
