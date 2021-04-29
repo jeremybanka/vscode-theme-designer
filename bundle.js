@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body > main {\n  width: calc(100% - 24px);\n  max-width: 800px;\n  margin: auto;\n  height: calc(50vh - 100px);\n  overflow-y: scroll;\n  font-family: \"Theia\";\n  box-sizing: border-box;\n  border-top: 5px dotted magenta;\n  border-bottom: 5px dotted magenta;\n  padding-left: 10px;\n}\nbody > main .form-group {\n  display: flex;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  cursor: pointer;\n}\nbody > main .form-group * {\n  cursor: pointer;\n}\nbody > main .form-group ~ .form-group {\n  border-top: 1px solid rgba(196, 98, 87, 0.836);\n}\nbody > main .form-group label {\n  flex-grow: 1;\n}\nbody > main .form-group label:hover {\n  background: linear-gradient(to right, #dff, #dff0);\n}\nbody > main .form-group input[type=color] {\n  width: 21px;\n  appearance: none;\n  padding: none;\n  background-color: white;\n}\nbody > footer {\n  display: flex;\n  width: calc(100% - 24px);\n  height: 100px;\n  max-width: 800px;\n  margin: auto;\n  align-items: center;\n  justify-content: flex-end;\n}\nbody > footer #export {\n  background: magenta;\n  color: white;\n  font-family: Manufab;\n  font-variation-settings: \"wght\" 600;\n  font-size: 18px;\n  padding: 0 1rem;\n  line-height: 0.7;\n  height: 2rem;\n  border-radius: 1;\n  appearance: none;\n  border: none;\n  border-radius: 1rem;\n  transition-property: filter;\n  transition-duration: 200ms;\n  outline: none;\n}\nbody > footer #export:hover {\n  filter: drop-shadow(0px 1px 5px #3ff);\n}\nbody > footer #export:active {\n  filter: invert(1);\n}", "",{"version":3,"sources":["webpack://./src/styles/controls.scss"],"names":[],"mappings":"AACE;EACE,wBAAA;EACA,gBAAA;EACA,YAAA;EACA,0BAAA;EACA,kBAAA;EACA,oBAAA;EACA,sBAAA;EACA,8BAAA;EACA,iCAAA;EACA,kBAAA;AAAJ;AAEI;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;AAAN;AACM;EACE,eAAA;AACR;AACM;EACE,8CAAA;AACR;AACM;EACE,YAAA;AACR;AAAQ;EACE,kDAAA;AAEV;AACM;EACE,WAAA;EACA,gBAAA;EACA,aAAA;EACA,uBAAA;AACR;AAGE;EACE,aAAA;EACA,wBAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,mBAAA;EACA,yBAAA;AADJ;AAEI;EACE,mBAAA;EACA,YAAA;EACA,oBAAA;EACA,mCAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;EACA,gBAAA;EACA,YAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,aAAA;AAAN;AAEI;EACE,qCAAA;AAAN;AAEI;EACE,iBAAA;AAAN","sourcesContent":["body {\n  > main {\n    width: calc(100% - 24px);\n    max-width: 800px;\n    margin: auto;\n    height: calc(50vh - 100px);\n    overflow-y: scroll;\n    font-family: \"Theia\";\n    box-sizing: border-box;\n    border-top: 5px dotted magenta;\n    border-bottom: 5px dotted magenta;\n    padding-left: 10px;\n\n    .form-group {\n      display: flex;\n      padding-top: 5px;\n      padding-bottom: 5px;\n      cursor: pointer;\n      * {\n        cursor: pointer;\n      }\n      ~ .form-group {\n        border-top: 1px solid rgba(196, 98, 87, 0.836);\n      }\n      label {\n        flex-grow: 1;\n        &:hover {\n          background: linear-gradient(to right, #dff, #dff0);\n        }\n      }\n      input[type=\"color\"] {\n        width: 21px;\n        appearance: none;\n        padding: none;\n        background-color: white;\n      }\n    }\n  }\n  > footer {\n    display: flex;\n    width: calc(100% - 24px);\n    height: 100px;\n    max-width: 800px;\n    margin: auto;\n    align-items: center;\n    justify-content: flex-end;\n    #export {\n      background: magenta;\n      color: white;\n      font-family: Manufab;\n      font-variation-settings: \"wght\" 600;\n      font-size: 18px;\n      padding: 0 1rem;\n      line-height: 0.7;\n      height: 2rem;\n      border-radius: 1;\n      appearance: none;\n      border: none;\n      border-radius: 1rem;\n      transition-property: filter;\n      transition-duration: 200ms;\n      outline: none;\n    }\n    #export:hover {\n      filter: drop-shadow(0px 1px 5px #3ff);\n    }\n    #export:active {\n      filter: invert(1);\n    }\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body > main {\n  width: calc(100% - 24px);\n  max-width: 800px;\n  margin: auto;\n  height: calc(50vh - 100px);\n  overflow-y: scroll;\n  font-family: \"Theia\";\n  box-sizing: border-box;\n  border-top: 5px dotted magenta;\n  border-bottom: 5px dotted magenta;\n  padding-left: 10px;\n}\nbody > main .form-group {\n  display: flex;\n  padding-top: 5px;\n  padding-bottom: 5px;\n  cursor: pointer;\n}\nbody > main .form-group * {\n  cursor: pointer;\n}\nbody > main .form-group ~ .form-group {\n  border-top: 1px solid rgba(196, 98, 87, 0.836);\n}\nbody > main .form-group label {\n  flex-grow: 1;\n}\nbody > main .form-group label:hover {\n  background: linear-gradient(to right, #dff, #dff0);\n}\nbody > main .form-group input[type=color] {\n  width: 21px;\n  appearance: none;\n  padding: none;\n  background-color: white;\n}\nbody > footer {\n  display: flex;\n  width: calc(100% - 24px);\n  height: 100px;\n  max-width: 800px;\n  margin: auto;\n  align-items: center;\n  justify-content: flex-end;\n}\nbody > footer .spacer {\n  flex-grow: 1;\n}\nbody > footer input[type=text] {\n  padding: 0;\n  padding-left: 10px;\n  appearance: none;\n  outline: none;\n  height: 2rem;\n  border-radius: 1rem;\n  border: #ddd solid 2px;\n  font-size: 16px;\n  font-family: Manufab;\n  flex-shrink: 1;\n  width: 35%;\n}\nbody > footer #export {\n  background: magenta;\n  color: white;\n  font-family: Manufab;\n  font-variation-settings: \"wght\" 600;\n  font-size: 18px;\n  padding: 0 1rem;\n  line-height: 0.7;\n  height: 2rem;\n  appearance: none;\n  border: none;\n  border-radius: 1rem;\n  transition-property: filter;\n  transition-duration: 200ms;\n  outline: none;\n}\nbody > footer #export:hover {\n  filter: drop-shadow(0px 1px 5px #3ff);\n}\nbody > footer #export:active {\n  filter: invert(1);\n}", "",{"version":3,"sources":["webpack://./src/styles/controls.scss"],"names":[],"mappings":"AACE;EACE,wBAAA;EACA,gBAAA;EACA,YAAA;EACA,0BAAA;EACA,kBAAA;EACA,oBAAA;EACA,sBAAA;EACA,8BAAA;EACA,iCAAA;EACA,kBAAA;AAAJ;AAEI;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;AAAN;AACM;EACE,eAAA;AACR;AACM;EACE,8CAAA;AACR;AACM;EACE,YAAA;AACR;AAAQ;EACE,kDAAA;AAEV;AACM;EACE,WAAA;EACA,gBAAA;EACA,aAAA;EACA,uBAAA;AACR;AAGE;EACE,aAAA;EACA,wBAAA;EACA,aAAA;EACA,gBAAA;EACA,YAAA;EACA,mBAAA;EACA,yBAAA;AADJ;AAEI;EACE,YAAA;AAAN;AAEI;EACE,UAAA;EACA,kBAAA;EACA,gBAAA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,sBAAA;EACA,eAAA;EACA,oBAAA;EACA,cAAA;EACA,UAAA;AAAN;AAEI;EACE,mBAAA;EACA,YAAA;EACA,oBAAA;EACA,mCAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;EACA,YAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,aAAA;AAAN;AAEI;EACE,qCAAA;AAAN;AAEI;EACE,iBAAA;AAAN","sourcesContent":["body {\n  > main {\n    width: calc(100% - 24px);\n    max-width: 800px;\n    margin: auto;\n    height: calc(50vh - 100px);\n    overflow-y: scroll;\n    font-family: \"Theia\";\n    box-sizing: border-box;\n    border-top: 5px dotted magenta;\n    border-bottom: 5px dotted magenta;\n    padding-left: 10px;\n\n    .form-group {\n      display: flex;\n      padding-top: 5px;\n      padding-bottom: 5px;\n      cursor: pointer;\n      * {\n        cursor: pointer;\n      }\n      ~ .form-group {\n        border-top: 1px solid rgba(196, 98, 87, 0.836);\n      }\n      label {\n        flex-grow: 1;\n        &:hover {\n          background: linear-gradient(to right, #dff, #dff0);\n        }\n      }\n      input[type=\"color\"] {\n        width: 21px;\n        appearance: none;\n        padding: none;\n        background-color: white;\n      }\n    }\n  }\n  > footer {\n    display: flex;\n    width: calc(100% - 24px);\n    height: 100px;\n    max-width: 800px;\n    margin: auto;\n    align-items: center;\n    justify-content: flex-end;\n    .spacer {\n      flex-grow: 1;\n    }\n    input[type=\"text\"] {\n      padding: 0;\n      padding-left: 10px;\n      appearance: none;\n      outline: none;\n      height: 2rem;\n      border-radius: 1rem;\n      border: #ddd solid 2px;\n      font-size: 16px;\n      font-family: Manufab;\n      flex-shrink: 1;\n      width: 35%;\n    }\n    #export {\n      background: magenta;\n      color: white;\n      font-family: Manufab;\n      font-variation-settings: \"wght\" 600;\n      font-size: 18px;\n      padding: 0 1rem;\n      line-height: 0.7;\n      height: 2rem;\n      appearance: none;\n      border: none;\n      border-radius: 1rem;\n      transition-property: filter;\n      transition-duration: 200ms;\n      outline: none;\n    }\n    #export:hover {\n      filter: drop-shadow(0px 1px 5px #3ff);\n    }\n    #export:active {\n      filter: invert(1);\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -174,7 +174,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  font-size: 20px;\n}\n\nbody {\n  font-family: Manufab;\n  font-variation-settings: \"wght\" 324;\n  margin: 0;\n  height: 100vh;\n  width: 100vw;\n}\nbody > header {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 50vh;\n  background: #fff;\n  overflow-x: scroll;\n}\nbody > header #desktop {\n  padding: 0 20px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 50vh;\n}\nbody > header #desktop #vscode {\n  color: #777;\n  display: flex;\n  flex-direction: column;\n  height: calc(100% - 2rem);\n  width: calc(100% - 2rem);\n  min-width: 800px;\n  background: #f2f2f2;\n  box-shadow: 0px 2px 7px #777;\n  border-radius: 10px;\n}\nbody > header #desktop #vscode header,\nbody > header #desktop #vscode main,\nbody > header #desktop #vscode footer {\n  width: 100%;\n}\nbody > header #desktop #vscode header,\nbody > header #desktop #vscode footer {\n  height: 1rem;\n  font-size: 0.6rem;\n}\nbody > header #desktop #vscode header {\n  text-align: center;\n}\nbody > header #desktop #vscode main {\n  height: 100%;\n  display: flex;\n}\nbody > header #desktop #vscode main #activity-bar {\n  font-variation-settings: \"wght\" 75;\n  color: #999;\n  font-family: Icon;\n  height: 100%;\n  width: 50px;\n  text-align: center;\n}\nbody > header #desktop #vscode main #side-bar {\n  font-size: 0.75rem;\n  height: 100%;\n  width: 200px;\n}\nbody > header #desktop #vscode main #side-bar label,\nbody > header #desktop #vscode main #side-bar h1 {\n  font-size: 0.6rem;\n  text-transform: uppercase;\n}\nbody > header #desktop #vscode main #side-bar label {\n  display: block;\n  background: #ccc;\n  font-variation-settings: \"wght\" 600;\n  padding-top: 4px;\n  padding-bottom: 2px;\n  padding-left: 4px;\n}\nbody > header #desktop #vscode main #side-bar label::before {\n  font-variation-settings: \"wght\" 300;\n  text-transform: lowercase;\n  font-family: Icon;\n  margin-right: 5px;\n  content: \"v\";\n}\nbody > header #desktop #vscode main #side-bar ul {\n  padding: 0;\n  list-style-type: none;\n}\nbody > header #desktop #vscode main #side-bar ul,\nbody > header #desktop #vscode main #side-bar ul li {\n  margin: 0;\n  padding: 5px;\n  padding-left: 10px;\n}\nbody > header #desktop #vscode main #content-area {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n}\nbody > header #desktop #vscode main #content-area #tabs {\n  display: flex;\n  height: 50px;\n}\nbody > header #desktop #vscode main #content-area #tabs #active-tab {\n  background: #fff;\n}\nbody > header #desktop #vscode main #content-area #tabs > * {\n  padding: 10px;\n  display: flex;\n  align-items: center;\n}\nbody > header #desktop #vscode main #content-area #text {\n  font-family: Theia;\n  color: #555;\n  height: 100%;\n  background: #fff;\n  padding-left: 1rem;\n}\nbody > header #desktop #vscode main #content-area #text .js-content {\n  display: block;\n}\nbody > header #desktop #vscode main #content-area #text .js-content > div {\n  margin-top: 1rem;\n}\nbody > header #desktop #vscode main #content-area #text .js-content div > div::before {\n  content: \"..\";\n  opacity: 0;\n}\nbody > header #desktop #vscode main #content-area #text .html-content {\n  display: none;\n}\nbody > header #desktop #vscode main #content-area #text .css-content {\n  display: none;\n}\nbody > header #desktop #vscode footer {\n  display: flex;\n}\nbody > header #desktop #vscode footer > * {\n  padding: 0 10px;\n}\nbody > header #desktop #vscode footer .spacer {\n  flex-grow: 1;\n}\nbody > header #desktop #vscode footer .extension::before {\n  font-variation-settings: \"wght\" 150;\n  font-family: Icon;\n  margin-right: 3px;\n  content: \"c\";\n}\n\n#tabs > *:hover,\nli:hover {\n  background: #e2e2e2;\n}\n\n@media (max-width: 840px) {\n  body > header {\n    justify-content: flex-start;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/vs-code.scss"],"names":[],"mappings":"AAAA;EACE,eAAA;AACF;;AAEA;EACE,oBAAA;EACA,mCAAA;EACA,SAAA;EACA,aAAA;EACA,YAAA;AACF;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;AAEJ;AADI;EACE,eAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;AAGN;AAFM;EACE,WAAA;EACA,aAAA;EACA,sBAAA;EACA,yBAAA;EACA,wBAAA;EACA,gBAAA;EACA,mBAAA;EACA,4BAAA;EACA,mBAAA;AAIR;AAHQ;;;EAGE,WAAA;AAKV;AAHQ;;EAEE,YAAA;EACA,iBAAA;AAKV;AAHQ;EACE,kBAAA;AAKV;AAHQ;EACE,YAAA;EACA,aAAA;AAKV;AAJU;EACE,kCAAA;EACA,WAAA;EACA,iBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;AAMZ;AAJU;EACE,kBAAA;EACA,YAAA;EACA,YAAA;AAMZ;AALY;;EAEE,iBAAA;EACA,yBAAA;AAOd;AALY;EACE,cAAA;EACA,gBAAA;EACA,mCAAA;EACA,gBAAA;EACA,mBAAA;EACA,iBAAA;AAOd;AANc;EACE,mCAAA;EACA,yBAAA;EACA,iBAAA;EACA,iBAAA;EACA,YAAA;AAQhB;AALY;EACE,UAAA;EACA,qBAAA;AAOd;AANc;;EAEE,SAAA;EACA,YAAA;EACA,kBAAA;AAQhB;AAJU;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;AAMZ;AALY;EACE,aAAA;EACA,YAAA;AAOd;AANc;EACE,gBAAA;AAQhB;AANc;EACE,aAAA;EACA,aAAA;EACA,mBAAA;AAQhB;AALY;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;AAOd;AANc;EACE,cAAA;AAQhB;AAPgB;EACE,gBAAA;AASlB;AAPgB;EACE,aAAA;EACA,UAAA;AASlB;AANc;EACE,aAAA;AAQhB;AANc;EACE,aAAA;AAQhB;AAHQ;EACE,aAAA;AAKV;AAJU;EACE,eAAA;AAMZ;AAJU;EACE,YAAA;AAMZ;AAJU;EACE,mCAAA;EACA,iBAAA;EACA,iBAAA;EACA,YAAA;AAMZ;;AACA;;EAEE,mBAAA;AAEF;;AACA;EACE;IACE,2BAAA;EAEF;AACF","sourcesContent":[":root {\n  font-size: 20px;\n}\n\nbody {\n  font-family: Manufab;\n  font-variation-settings: \"wght\" 324;\n  margin: 0;\n  height: 100vh;\n  width: 100vw;\n  > header {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 50vh;\n    background: #fff;\n    overflow-x: scroll;\n    #desktop {\n      padding: 0 20px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 50vh;\n      #vscode {\n        color: #777;\n        display: flex;\n        flex-direction: column;\n        height: calc(100% - 2rem);\n        width: calc(100% - 2rem);\n        min-width: 800px;\n        background: #f2f2f2;\n        box-shadow: 0px 2px 7px #777;\n        border-radius: 10px;\n        header,\n        main,\n        footer {\n          width: 100%;\n        }\n        header,\n        footer {\n          height: 1rem;\n          font-size: 0.6rem;\n        }\n        header {\n          text-align: center;\n        }\n        main {\n          height: 100%;\n          display: flex;\n          #activity-bar {\n            font-variation-settings: \"wght\" 75;\n            color: #999;\n            font-family: Icon;\n            height: 100%;\n            width: 50px;\n            text-align: center;\n          }\n          #side-bar {\n            font-size: 0.75rem;\n            height: 100%;\n            width: 200px;\n            label,\n            h1 {\n              font-size: 0.6rem;\n              text-transform: uppercase;\n            }\n            label {\n              display: block;\n              background: #ccc;\n              font-variation-settings: \"wght\" 600;\n              padding-top: 4px;\n              padding-bottom: 2px;\n              padding-left: 4px;\n              &::before {\n                font-variation-settings: \"wght\" 300;\n                text-transform: lowercase;\n                font-family: Icon;\n                margin-right: 5px;\n                content: \"v\";\n              }\n            }\n            ul {\n              padding: 0;\n              list-style-type: none;\n              &,\n              li {\n                margin: 0;\n                padding: 5px;\n                padding-left: 10px;\n              }\n            }\n          }\n          #content-area {\n            height: 100%;\n            width: 100%;\n            display: flex;\n            flex-direction: column;\n            #tabs {\n              display: flex;\n              height: 50px;\n              #active-tab {\n                background: #fff;\n              }\n              > * {\n                padding: 10px;\n                display: flex;\n                align-items: center;\n              }\n            }\n            #text {\n              font-family: Theia;\n              color: #555;\n              height: 100%;\n              background: #fff;\n              padding-left: 1rem;\n              .js-content {\n                display: block;\n                > div {\n                  margin-top: 1rem;\n                }\n                div > div::before {\n                  content: \"..\";\n                  opacity: 0;\n                }\n              }\n              .html-content {\n                display: none;\n              }\n              .css-content {\n                display: none;\n              }\n            }\n          }\n        }\n        footer {\n          display: flex;\n          > * {\n            padding: 0 10px;\n          }\n          .spacer {\n            flex-grow: 1;\n          }\n          .extension::before {\n            font-variation-settings: \"wght\" 150;\n            font-family: Icon;\n            margin-right: 3px;\n            content: \"c\";\n          }\n        }\n      }\n    }\n  }\n}\n#tabs > *:hover,\nli:hover {\n  background: #e2e2e2;\n}\n\n@media (max-width: 840px) {\n  body > header {\n    justify-content: flex-start;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  font-size: 20px;\n}\n\nbody {\n  font-family: Manufab;\n  font-variation-settings: \"wght\" 324;\n  margin: 0;\n  height: 100vh;\n  width: 100vw;\n}\nbody > header {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 50vh;\n  background: #fff;\n  overflow-x: scroll;\n}\nbody > header #desktop {\n  padding: 0 20px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 50vh;\n}\nbody > header #desktop #vscode {\n  --hover-bg: #e2e2e2;\n  color: #777;\n  display: flex;\n  flex-direction: column;\n  height: calc(100% - 2rem);\n  width: calc(100% - 2rem);\n  min-width: 800px;\n  background: #f2f2f2;\n  box-shadow: 0px 2px 7px #777;\n  border-radius: 10px;\n}\nbody > header #desktop #vscode header,\nbody > header #desktop #vscode main,\nbody > header #desktop #vscode footer {\n  width: 100%;\n}\nbody > header #desktop #vscode header,\nbody > header #desktop #vscode footer {\n  height: 1rem;\n  font-size: 0.6rem;\n}\nbody > header #desktop #vscode header {\n  text-align: center;\n}\nbody > header #desktop #vscode main {\n  height: 100%;\n  display: flex;\n}\nbody > header #desktop #vscode main #activity-bar {\n  font-variation-settings: \"wght\" 75;\n  color: #999;\n  font-family: Icon;\n  height: 100%;\n  width: 50px;\n  text-align: center;\n}\nbody > header #desktop #vscode main #side-bar {\n  font-size: 0.75rem;\n  height: 100%;\n  width: 200px;\n}\nbody > header #desktop #vscode main #side-bar label,\nbody > header #desktop #vscode main #side-bar h1 {\n  font-size: 0.6rem;\n  text-transform: uppercase;\n}\nbody > header #desktop #vscode main #side-bar label {\n  display: block;\n  background: #ccc;\n  font-variation-settings: \"wght\" 600;\n  padding-top: 4px;\n  padding-bottom: 2px;\n  padding-left: 4px;\n}\nbody > header #desktop #vscode main #side-bar label::before {\n  font-variation-settings: \"wght\" 300;\n  text-transform: lowercase;\n  font-family: Icon;\n  margin-right: 5px;\n  content: \"v\";\n}\nbody > header #desktop #vscode main #side-bar ul {\n  padding: 0;\n  list-style-type: none;\n}\nbody > header #desktop #vscode main #side-bar ul,\nbody > header #desktop #vscode main #side-bar ul li {\n  margin: 0;\n  padding: 5px;\n  padding-left: 10px;\n}\nbody > header #desktop #vscode main #content-area {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n}\nbody > header #desktop #vscode main #content-area #tabs {\n  display: flex;\n  height: 50px;\n}\nbody > header #desktop #vscode main #content-area #tabs #active-tab {\n  background: #fff;\n}\nbody > header #desktop #vscode main #content-area #tabs > * {\n  padding: 10px;\n  display: flex;\n  align-items: center;\n}\nbody > header #desktop #vscode main #content-area #text {\n  font-family: Theia;\n  color: #555;\n  height: 100%;\n  background: #fff;\n  padding-left: 1rem;\n}\nbody > header #desktop #vscode main #content-area #text .js-content {\n  display: block;\n}\nbody > header #desktop #vscode main #content-area #text .js-content > div {\n  margin-top: 1rem;\n}\nbody > header #desktop #vscode main #content-area #text .js-content div > div::before {\n  content: \"..\";\n  opacity: 0;\n}\nbody > header #desktop #vscode main #content-area #text .html-content {\n  display: none;\n}\nbody > header #desktop #vscode main #content-area #text .css-content {\n  display: none;\n}\nbody > header #desktop #vscode footer {\n  display: flex;\n}\nbody > header #desktop #vscode footer > * {\n  padding: 0 10px;\n}\nbody > header #desktop #vscode footer .spacer {\n  flex-grow: 1;\n}\nbody > header #desktop #vscode footer .extension::before {\n  font-variation-settings: \"wght\" 150;\n  font-family: Icon;\n  margin-right: 3px;\n  content: \"c\";\n}\n\n#tabs > *:hover,\nli:hover {\n  background: var(--hover-bg);\n}\n\n@media (max-width: 840px) {\n  body > header {\n    justify-content: flex-start;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/vs-code.scss"],"names":[],"mappings":"AAAA;EACE,eAAA;AACF;;AAEA;EACE,oBAAA;EACA,mCAAA;EACA,SAAA;EACA,aAAA;EACA,YAAA;AACF;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;AAEJ;AADI;EACE,eAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;AAGN;AAFM;EACE,mBAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,yBAAA;EACA,wBAAA;EACA,gBAAA;EACA,mBAAA;EACA,4BAAA;EACA,mBAAA;AAIR;AAHQ;;;EAGE,WAAA;AAKV;AAHQ;;EAEE,YAAA;EACA,iBAAA;AAKV;AAHQ;EACE,kBAAA;AAKV;AAHQ;EACE,YAAA;EACA,aAAA;AAKV;AAJU;EACE,kCAAA;EACA,WAAA;EACA,iBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;AAMZ;AAJU;EACE,kBAAA;EACA,YAAA;EACA,YAAA;AAMZ;AALY;;EAEE,iBAAA;EACA,yBAAA;AAOd;AALY;EACE,cAAA;EACA,gBAAA;EACA,mCAAA;EACA,gBAAA;EACA,mBAAA;EACA,iBAAA;AAOd;AANc;EACE,mCAAA;EACA,yBAAA;EACA,iBAAA;EACA,iBAAA;EACA,YAAA;AAQhB;AALY;EACE,UAAA;EACA,qBAAA;AAOd;AANc;;EAEE,SAAA;EACA,YAAA;EACA,kBAAA;AAQhB;AAJU;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;AAMZ;AALY;EACE,aAAA;EACA,YAAA;AAOd;AANc;EACE,gBAAA;AAQhB;AANc;EACE,aAAA;EACA,aAAA;EACA,mBAAA;AAQhB;AALY;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,kBAAA;AAOd;AANc;EACE,cAAA;AAQhB;AAPgB;EACE,gBAAA;AASlB;AAPgB;EACE,aAAA;EACA,UAAA;AASlB;AANc;EACE,aAAA;AAQhB;AANc;EACE,aAAA;AAQhB;AAHQ;EACE,aAAA;AAKV;AAJU;EACE,eAAA;AAMZ;AAJU;EACE,YAAA;AAMZ;AAJU;EACE,mCAAA;EACA,iBAAA;EACA,iBAAA;EACA,YAAA;AAMZ;;AAGE;;EACE,2BAAA;AACJ;;AAGA;EACE;IACE,2BAAA;EAAF;AACF","sourcesContent":[":root {\n  font-size: 20px;\n}\n\nbody {\n  font-family: Manufab;\n  font-variation-settings: \"wght\" 324;\n  margin: 0;\n  height: 100vh;\n  width: 100vw;\n  > header {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 50vh;\n    background: #fff;\n    overflow-x: scroll;\n    #desktop {\n      padding: 0 20px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 50vh;\n      #vscode {\n        --hover-bg: #e2e2e2;\n        color: #777;\n        display: flex;\n        flex-direction: column;\n        height: calc(100% - 2rem);\n        width: calc(100% - 2rem);\n        min-width: 800px;\n        background: #f2f2f2;\n        box-shadow: 0px 2px 7px #777;\n        border-radius: 10px;\n        header,\n        main,\n        footer {\n          width: 100%;\n        }\n        header,\n        footer {\n          height: 1rem;\n          font-size: 0.6rem;\n        }\n        header {\n          text-align: center;\n        }\n        main {\n          height: 100%;\n          display: flex;\n          #activity-bar {\n            font-variation-settings: \"wght\" 75;\n            color: #999;\n            font-family: Icon;\n            height: 100%;\n            width: 50px;\n            text-align: center;\n          }\n          #side-bar {\n            font-size: 0.75rem;\n            height: 100%;\n            width: 200px;\n            label,\n            h1 {\n              font-size: 0.6rem;\n              text-transform: uppercase;\n            }\n            label {\n              display: block;\n              background: #ccc;\n              font-variation-settings: \"wght\" 600;\n              padding-top: 4px;\n              padding-bottom: 2px;\n              padding-left: 4px;\n              &::before {\n                font-variation-settings: \"wght\" 300;\n                text-transform: lowercase;\n                font-family: Icon;\n                margin-right: 5px;\n                content: \"v\";\n              }\n            }\n            ul {\n              padding: 0;\n              list-style-type: none;\n              &,\n              li {\n                margin: 0;\n                padding: 5px;\n                padding-left: 10px;\n              }\n            }\n          }\n          #content-area {\n            height: 100%;\n            width: 100%;\n            display: flex;\n            flex-direction: column;\n            #tabs {\n              display: flex;\n              height: 50px;\n              #active-tab {\n                background: #fff;\n              }\n              > * {\n                padding: 10px;\n                display: flex;\n                align-items: center;\n              }\n            }\n            #text {\n              font-family: Theia;\n              color: #555;\n              height: 100%;\n              background: #fff;\n              padding-left: 1rem;\n              .js-content {\n                display: block;\n                > div {\n                  margin-top: 1rem;\n                }\n                div > div::before {\n                  content: \"..\";\n                  opacity: 0;\n                }\n              }\n              .html-content {\n                display: none;\n              }\n              .css-content {\n                display: none;\n              }\n            }\n          }\n        }\n        footer {\n          display: flex;\n          > * {\n            padding: 0 10px;\n          }\n          .spacer {\n            flex-grow: 1;\n          }\n          .extension::before {\n            font-variation-settings: \"wght\" 150;\n            font-family: Icon;\n            margin-right: 3px;\n            content: \"c\";\n          }\n        }\n      }\n    }\n  }\n}\n#tabs > *,\nli {\n  &:hover {\n    background: var(--hover-bg);\n  }\n}\n\n@media (max-width: 840px) {\n  body > header {\n    justify-content: flex-start;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11874,6 +11874,55 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/package.js":
+/*!***************************!*\
+  !*** ./src/js/package.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Package)
+/* harmony export */ });
+class Package {
+  constructor() {
+    this.name = ``
+    this.displayName = ``
+    this.description = ``
+    this.publisher = ``
+    this.version = `0.0.1`
+    this.engines = {
+      vscode: `^1.28.0`,
+    }
+    this.categories = [``]
+    this.contributes = {
+      themes: [
+        {
+          label: ``,
+          uiTheme: `vs`,
+          path: ``,
+        },
+      ],
+    }
+  }
+
+  setUserName(name) {
+    this.publisher = name
+  }
+
+  setThemeName(name) {
+    const slugName = name.toLowerCase().replace(/ /g, `-`)
+    this.name = slugName
+    this.displayName = name
+    this.contributes.themes[0].label = name
+    this.contributes.themes[0].path = `./${slugName}-color-theme.json`
+  }
+}
+
+
+/***/ }),
+
 /***/ "./src/js/starting-spec.js":
 /*!*********************************!*\
   !*** ./src/js/starting-spec.js ***!
@@ -11968,13 +12017,10 @@ class Theme {
   }
 
   setColors(spec) {
-    console.log(spec)
     const entries = Object.entries(spec)
     entries.forEach(entry => {
-      // console.log(entry)
       const [target, color] = entry
       const displayLocations = _token_scopes__WEBPACK_IMPORTED_MODULE_0__.default[target]
-      // console.log(displayLocations)
       if (target === `Scrollbar`) {
         const colorNoOpacity = color.slice(0, 7)
         this.colors[`scrollbarSlider.background`] = `${colorNoOpacity}66`
@@ -12627,6 +12673,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _starting_spec__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./starting-spec */ "./src/js/starting-spec.js");
 /* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./theme */ "./src/js/theme.js");
+/* harmony import */ var _package__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./package */ "./src/js/package.js");
 /* eslint-disable func-names */
 
 // STYLE
@@ -12641,45 +12688,77 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+function $paintVsCode(target, value) {
+  if (target === `hover-bg`) {
+    jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#vscode`).css(`--hover-bg`, value)
+  } else if (target.slice(-2) === `bg`) {
+    jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.${target}`).css(`background`, value)
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.${target}`).css(`color`, value)
+  }
+}
+
 jquery__WEBPACK_IMPORTED_MODULE_5___default()(() => {
   let themeSpec = _starting_spec__WEBPACK_IMPORTED_MODULE_6__.default
-  const foundSave = window.localStorage.getItem(`theme-spec`)
-  if (foundSave) {
-    themeSpec = JSON.parse(foundSave)
+  let packageSpec = {
+    userName: ``,
+    themeName: ``,
+  }
+  const foundThemeSave = window.localStorage.getItem(`theme-spec`)
+  if (foundThemeSave) {
+    themeSpec = JSON.parse(foundThemeSave)
   } else {
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   }
-
+  const foundPackageSave = window.localStorage.getItem(`package-spec`)
+  if (foundPackageSave) {
+    packageSpec = JSON.parse(foundPackageSave)
+  } else {
+    window.localStorage.setItem(`package-spec`, JSON.stringify(packageSpec))
+  }
   const theme = new _theme__WEBPACK_IMPORTED_MODULE_7__.default(`Cool Name`, `dark`)
+  const userPackage = new _package__WEBPACK_IMPORTED_MODULE_8__.default()
+  console.log(packageSpec)
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#user-name`).val(packageSpec.userName)
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#theme-name`).val(packageSpec.themeName)
 
-  const $formControls = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.form-control`)
-
-  $formControls.each(function () {
-    const $formControl = jquery__WEBPACK_IMPORTED_MODULE_5___default()(this)
-    const formControlId = $formControl.attr(`id`)
-    const $label = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`label[for='${formControlId}']`)
+  const $colorInputs = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`input[type=color]`)
+  $colorInputs.each(function () {
+    const $colorInput = jquery__WEBPACK_IMPORTED_MODULE_5___default()(this)
+    const colorInputId = $colorInput.attr(`id`)
+    const $label = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`label[for='${colorInputId}']`)
     const key = $label.text()
     const value = themeSpec[key]
-    $formControl.val(value)
+    $colorInput.val(value)
+    const target = colorInputId
+    $paintVsCode(target, value)
   })
 
-  // console.log(themeSpec)
-
-  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.form-control`).on(`change`, event => {
-    console.log(`form control changed`)
-    console.log(event.target.value)
-    const $label = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`label[for='${event.target.id}']`)
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.userInfo`).on(`change`, () => {
+    const userName = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#user-name`).val()
+    const themeName = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#theme-name`).val()
+    packageSpec.userName = userName
+    packageSpec.themeName = themeName
+    window.localStorage.setItem(`package-spec`, JSON.stringify(packageSpec))
+    console.log(packageSpec)
+  })
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`input[type=color]`).on(`change`, event => {
+    const colorInput = event.target
+    const { value, id } = colorInput
+    const $label = jquery__WEBPACK_IMPORTED_MODULE_5___default()(`label[for='${id}']`)
+    const target = id
+    $paintVsCode(target, value)
     const key = $label.text()
-    themeSpec[key] = event.target.value
+    themeSpec[key] = value
     console.log(key, themeSpec[key])
-    if (event.target.id.slice(-2) === `bg`) {
-      jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.${event.target.id}`).css(`background`, event.target.value)
-    } else {
-      jquery__WEBPACK_IMPORTED_MODULE_5___default()(`.${event.target.id}`).css(`color`, event.target.value)
-    }
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   })
-  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`button#export`).on(`click`, event => {
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(`button#export`).on(`click`, () => {
+    userPackage.setUserName(packageSpec.userName)
+    userPackage.setThemeName(packageSpec.themeName)
+    console.log(userPackage)
+    window.localStorage.setItem(`package`, JSON.stringify(userPackage))
     theme.setColors(themeSpec)
     window.localStorage.setItem(`theme`, JSON.stringify(theme))
     const url = `./export.html`
@@ -12688,6 +12767,10 @@ jquery__WEBPACK_IMPORTED_MODULE_5___default()(() => {
 })
 
 if (jquery__WEBPACK_IMPORTED_MODULE_5___default()(`body#export`)) {
+  const savedPackage = window.localStorage.getItem(`package`)
+  if (savedPackage) {
+    jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#package`).append(savedPackage)
+  }
   const savedTheme = window.localStorage.getItem(`theme`)
   if (savedTheme) {
     jquery__WEBPACK_IMPORTED_MODULE_5___default()(`#theme`).append(savedTheme)
