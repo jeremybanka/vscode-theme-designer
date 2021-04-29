@@ -1,20 +1,29 @@
 #### VS Code Theme Designer
 
-_by Jeremy Banka, Adrian Camacho, Sammai Gutierrez, Rami Ahmed, and Maxwell Meyer_
+_by Jeremy Banka, Adrian Camacho, Sammai Gutierrez, and Maxwell Meyer_
 
 ## Technologies Used
 
 - 📄 HTML5
 - 💅 SASS ➡️ CSS3
 - ▶️ ES6 🛠 Airbnb ESLint (thanks to VS Code ext. ESLint by Dirk Baeumer)
+- 💲 jquery 3.6.0
 - ❓ jest 26.6.3
-- 📦 Webpack 5 for bundling my js modules.
+- 📦 Webpack 5 for bundling
 - 👨🏻‍🎨 Adobe Illustrator (comps/planning)
-- 🅰️ Fonts and Icons by me using Georg Seifert's _superb_ 💚[Glyphs.app](https://glyphsapp.com)💚
+- 🅰️ Fonts and Icons by Jeremy Banka
 
 ## Description
 
-_..._
+This is an online tool to create VS Code themes. To use it, you'll have to have [vsce](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) installed.
+
+- See your changes live as you make them.
+- When you're done, click "Export".
+- Copy the output text into two files in the same folder called `package.json` and `*****-color-theme.json` where `*****` is the name you picked but in lower-kebab-case.
+- Run `$ vsce package` in this folder. Say 'y' if it asks you anything.
+- Right click the `vsix` file and click "Install Extension VSIX"
+- Then, go to your Extensions tab, find your newly-installed theme, and Set Color Theme. Remember to click it again when it previews.
+- If there's an error at this point, it's probably because your theme filename is slightly off.
 
 ## Setup/Installation Requirements
 
@@ -58,7 +67,9 @@ This software is licensed under GPL 3.0.
 ## Contact Information
 
 adriancamacho18 at gmail dot com
+
 hello at jeremybanka dot com
+
 maxreadswell at gmail dot com
-ramiahmedportland at gmail dot com
+
 sammaigutierrez at gmail dot com
