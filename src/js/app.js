@@ -13,6 +13,16 @@ import startingSpec from "./starting-spec"
 import Theme from "./theme"
 import Package from "./package"
 
+function $paintVsCode(target, value) {
+  if (target === `hover-bg`) {
+    $(`#vscode`).css(`--hover-bg`, value)
+  } else if (target.slice(-2) === `bg`) {
+    $(`.${target}`).css(`background`, value)
+  } else {
+    $(`.${target}`).css(`color`, value)
+  }
+}
+
 $(() => {
   let themeSpec = startingSpec
   let packageSpec = {
@@ -35,15 +45,17 @@ $(() => {
   const theme = new Theme(`Cool Name`, `dark`)
   const userPackage = new Package()
 
-  const $formControls = $(`.form-control`)
+  const $colorInputs = $(`input[type=color]`)
 
-  $formControls.each(function () {
-    const $formControl = $(this)
-    const formControlId = $formControl.attr(`id`)
-    const $label = $(`label[for='${formControlId}']`)
+  $colorInputs.each(function () {
+    const $colorInput = $(this)
+    const colorInputId = $colorInput.attr(`id`)
+    const $label = $(`label[for='${colorInputId}']`)
     const key = $label.text()
     const value = themeSpec[key]
-    $formControl.val(value)
+    $colorInput.val(value)
+    const target = colorInputId
+    $paintVsCode(target, value)
   })
 
   $(`.userInfo`).on(`change`, event => {
@@ -53,16 +65,15 @@ $(() => {
     packageSpec.themeName = themeName
     console.log(userPackage)
   })
-
-  $(`.form-control`).on(`change`, event => {
-    const $label = $(`label[for='${event.target.id}']`)
+  $(`input[type=color]`).on(`change`, event => {
+    const colorInput = event.target
+    const { value, id } = colorInput
+    const $label = $(`label[for='${id}']`)
+    const target = id
+    $paintVsCode(target, value)
     const key = $label.text()
-    themeSpec[key] = event.target.value
-    if (event.target.id.slice(-2) === `bg`) {
-      $(`.${event.target.id}`).css(`background`, event.target.value)
-    } else {
-      $(`.${event.target.id}`).css(`color`, event.target.value)
-    }
+    themeSpec[key] = value
+    console.log(key, themeSpec[key])
     window.localStorage.setItem(`theme-spec`, JSON.stringify(themeSpec))
   })
   $(`button#export`).on(`click`, event => {
