@@ -1,0 +1,9 @@
+body#export {
+  font-family: Theia;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: calc(100% - 24px);
+  h1 {
+    user-select: none;
+  }
+}

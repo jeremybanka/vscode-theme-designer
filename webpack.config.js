@@ -12,10 +12,17 @@ module.exports = {
     new DotenvWebpackPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: `TITLE`,
+      title: `Code Themer`,
       favicon: `src/images/favicon.png`,
       template: `src/index.html`, // template file
       filename: `index.html`, // output file
+      inject: true,
+    }),
+    new HtmlWebpackPlugin({
+      title: `Export Result`,
+      favicon: `src/images/favicon.png`,
+      template: `src/export.html`, // template file
+      filename: `export.html`, // output file
       inject: true,
     }),
   ],
