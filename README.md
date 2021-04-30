@@ -19,7 +19,7 @@ This is an online tool to create VS Code themes. To use it, you'll have to have 
 
 - See your changes live as you make them.
 - When you're done, click "Export".
-- Copy the output text into two files in the same folder called `package.json` and `*****-color-theme.json` where `*****` is the name you picked but in lower-kebab-case.
+- Copy the output text into two files in the same folder called `package.json` and `*****-color-theme.json` where `*****` is the name you picked but in `lower-kebab-case`.
 - Run `$ vsce package` in this folder. Say 'y' if it asks you anything.
 - Right click the `vsix` file and click "Install Extension VSIX"
 - Then, go to your Extensions tab, find your newly-installed theme, and Set Color Theme. Remember to click it again when it previews.
